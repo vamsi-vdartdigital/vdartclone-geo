@@ -8,7 +8,7 @@ const FAQ = ({ faqs, schema = true }) => {
         setOpenIndex(openIndex === index ? null : index);
     };
 
-    // Generate FAQPage schema
+
     const faqSchema = schema ? {
         '@context': 'https://schema.org',
         '@type': 'FAQPage',
