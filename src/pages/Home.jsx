@@ -87,6 +87,29 @@ const Home = () => {
     { name: 'Toyota', logo: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="120" height="40" viewBox="0 0 120 40"%3E%3Crect fill="%23EB0A1E" width="120" height="40" rx="4"/%3E%3Ctext x="50%25" y="50%25" fill="white" font-size="16" font-weight="bold" text-anchor="middle" dy=".3em"%3ETOYOTA%3C/text%3E%3C/svg%3E' }
   ];
 
+  const faqs = [
+    {
+      question: "What is digital transformation and why is it important?",
+      answer: "Digital transformation is the integration of digital technology into all areas of business, fundamentally changing how you operate and deliver value to customers. According to McKinsey research, companies that embrace comprehensive digital transformation achieve 3.5x higher revenue growth compared to their peers. It's essential for staying competitive in today's rapidly evolving business landscape."
+    },
+    {
+      question: "How long does a typical digital transformation project take?",
+      answer: "The timeline varies based on scope and complexity. Strategic roadmap development typically takes 4-8 weeks, while implementation phases can range from 3-18 months. Our phased approach ensures you see measurable results early, with most clients experiencing a 40% reduction in operational costs within the first year."
+    },
+    {
+      question: "What industries does VDart Digital specialize in?",
+      answer: "We serve clients across automotive, financial services, telecommunications, healthcare, and retail sectors. Our 15+ years of experience with Fortune 500 companies like Toyota, T-Mobile, and BMO has given us deep expertise in both industry-specific challenges and cross-sector best practices."
+    },
+    {
+      question: "How do you ensure ROI from AI and cloud implementations?",
+      answer: "We establish clear KPIs upfront and use data-driven approaches throughout implementation. Our AI solutions typically achieve 4.2x ROI in the first year, while cloud migrations deliver 60% faster time-to-market. We provide ongoing analytics dashboards to track performance against your business objectives in real-time."
+    },
+    {
+      question: "Do you provide ongoing support after implementation?",
+      answer: "Yes. Our Managed Services team provides 24/7 support, proactive monitoring, and continuous optimization. We view ourselves as long-term strategic partners—Toyota has worked with us consistently since 2017 because we evolve solutions alongside their changing business needs."
+    }
+  ];
+
   return (
     <div className="pt-20">
       <SEO
@@ -294,6 +317,19 @@ const Home = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-6">
+          <h2 className="text-4xl font-bold text-center text-gray-900 mb-4">Frequently Asked Questions</h2>
+          <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+            Common questions about our digital transformation services
+          </p>
+          <div className="max-w-3xl mx-auto">
+            <FAQ faqs={faqs} />
           </div>
         </div>
       </section>
