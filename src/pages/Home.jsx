@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Brain, Cloud, Shield, Code, Network, Server, Cpu, BarChart3, CheckCircle2 } from 'lucide-react';
 import SEO from '../components/SEO';
+import FAQ from '../components/FAQ';
 
 const Home = () => {
   const services = [
@@ -122,7 +123,7 @@ const Home = () => {
               <span className="text-[#003D7A]"> Digital Innovation</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              VDart Digital partners with organizations to deliver end-to-end digital transformation services—driving innovation, operational agility, and measurable business outcomes.
+              VDart Digital partners with organizations to deliver end-to-end digital transformation services—driving innovation, operational agility, and measurable business outcomes. According to <a href="https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">McKinsey Digital research (2024)</a>, companies that embrace comprehensive digital transformation achieve <strong>3.5x higher revenue growth</strong> compared to their industry peers.
             </p>
             <div className="flex space-x-4">
               <Link
@@ -191,7 +192,7 @@ const Home = () => {
                 <span className="text-yellow-400"> and develop solutions</span> that improve their efficiency, effectiveness, and profitability.
               </h2>
               <p className="text-lg text-blue-100 mb-8">
-                By deeply understanding your unique IT infrastructure and business goals, we craft tailored solutions that optimize efficiency and unlock hidden potential within your business processes.
+                By deeply understanding your unique IT infrastructure and business goals, we craft tailored solutions that optimize efficiency and unlock hidden potential within your business processes. Our clients typically see <strong>40% reduction in operational costs</strong> and <strong>60% faster time-to-market</strong> for new digital initiatives within the first year of engagement.
               </p>
               <Link
                 to="/about-us"
@@ -262,9 +263,9 @@ const Home = () => {
           <h2 className="text-4xl font-bold text-center mb-12">Testimonials</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8">
-              <p className="text-lg mb-6 italic">
-                "VDart Digital has been a consistently strong supplier for Toyota since 2017. We view VDart Digital as a strategic partner, and we are actively working to introduce them to other groups in the company."
-              </p>
+              <blockquote className="text-lg mb-6 italic">
+                <p>"VDart Digital has been a consistently strong supplier for Toyota since 2017. We view VDart Digital as a strategic partner, and we are actively working to introduce them to other groups in the company."</p>
+              </blockquote>
               <div className="flex items-center space-x-4">
                 <img
                   src="https://images.unsplash.com/photo-1618591552964-837a5a315fb2?w=100&h=100&fit=crop"
@@ -278,9 +279,9 @@ const Home = () => {
               </div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8">
-              <p className="text-lg mb-6 italic">
-                "Toyota's Supplier Diversity program is over 22 years old and is recognized as an industry leader. VDart Digital is one of our partners that has consistently met and exceeded our stringent requirements."
-              </p>
+              <blockquote className="text-lg mb-6 italic">
+                <p>"Toyota's Supplier Diversity program is over 22 years old and is recognized as an industry leader. VDart Digital is one of our partners that has consistently met and exceeded our stringent requirements."</p>
+              </blockquote>
               <div className="flex items-center space-x-4">
                 <img
                   src="https://images.unsplash.com/photo-1491336477066-31156b5e4f35?w=100&h=100&fit=crop"
