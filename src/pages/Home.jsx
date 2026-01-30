@@ -88,8 +88,31 @@ const Home = () => {
 
   return (
     <div className="pt-20">
-      <SEO />
-      
+      <SEO
+        schema={{
+          '@context': 'https://schema.org',
+          '@type': 'Service',
+          'serviceType': 'Digital Transformation',
+          'provider': {
+            '@type': 'Organization',
+            'name': 'VDart Digital'
+          },
+          'areaServed': 'Worldwide',
+          'hasOfferCatalog': {
+            '@type': 'OfferCatalog',
+            'name': 'Digital Solutions',
+            'itemListElement': services.map(s => ({
+              '@type': 'Offer',
+              'itemOffered': {
+                '@type': 'Service',
+                'name': s.title,
+                'description': s.desc
+              }
+            }))
+          }
+        }}
+      />
+
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-gray-50 to-blue-50 py-20">
         <div className="container mx-auto px-6">
@@ -122,7 +145,24 @@ const Home = () => {
       {/* Partners Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Our Partners</h2>
+          <div className="bg-gray-50 rounded-2xl p-8 mb-16 border border-gray-100">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">Key Innovation Takeaways</h2>
+            <ul className="grid md:grid-cols-3 gap-4">
+              <li className="flex items-start space-x-2 text-gray-700">
+                <CheckCircle2 className="w-5 h-5 text-green-500 mt-1 shrink-0" />
+                <span>**AI-First Strategy:** Empowering enterprises with agentic AI workflows.</span>
+              </li>
+              <li className="flex items-start space-x-2 text-gray-700">
+                <CheckCircle2 className="w-5 h-5 text-green-500 mt-1 shrink-0" />
+                <span>**Modern Infrastructure:** Scalable cloud-native solutions for agility.</span>
+              </li>
+              <li className="flex items-start space-x-2 text-gray-700">
+                <CheckCircle2 className="w-5 h-5 text-green-500 mt-1 shrink-0" />
+                <span>**Trusted Partnerships:** Strategic digital consulting for measurable ROI.</span>
+              </li>
+            </ul>
+          </div>
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Who are our Strategic Partners?</h2>
           <div className="flex flex-wrap justify-center items-center gap-8">
             {partners.map((partner) => (
               <img
@@ -175,9 +215,9 @@ const Home = () => {
       {/* Services Grid */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center text-gray-900 mb-4">Our Services</h2>
+          <h2 className="text-4xl font-bold text-center text-gray-900 mb-4">How can we help your business grow?</h2>
           <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-            We work with our clients to understand their business processes, identify their pain points, and develop solutions that improve their efficiency, effectiveness, and profitability.
+            We partner with you to understand your unique business processes, identify pain points, and deploy specific digital solutions that enhance efficiency and drive long-term profitability.
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service) => {

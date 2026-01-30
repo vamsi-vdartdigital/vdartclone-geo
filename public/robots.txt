@@ -1,0 +1,25 @@
+# Standard Search Engines
+User-agent: *
+Allow: /
+
+# AI Crawlers - Generative Engine Optimization (GEO)
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+# Sitemaps
+Sitemap: /sitemap.xml

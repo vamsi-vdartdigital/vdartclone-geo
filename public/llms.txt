@@ -1,0 +1,23 @@
+# VDart Digital - AI & Digital Transformation
+
+> VDart Digital partners with organizations to deliver end-to-end digital transformation services—driving innovation, operational agility, and measurable business outcomes.
+
+## Core Services
+
+- [AI & Agentic AI](/ai-agentic-ai): Empowering the AI-First Enterprise with advanced agentic workflows and LLM integration.
+- [Cloud Services](/cloud-services): Comprehensive cloud migration, cloud-native development, and infrastructure management.
+- [Cybersecurity](/cybersecurity): Robust security frameworks and proactive threat management.
+- [Digital Services](/digital-services): Transforming business ideas into digital realities through design-thinking and agile development.
+- [Data & Analytics](/data-analytics): Unleashing data intelligence for growth and decision-support.
+
+## Products & Solutions
+
+- [LendSmart AI](/lendsmart-ai): Intelligent lending solutions.
+- [IDocLens](/idoclens): AI-powered document intelligence.
+- [DM Plus](/dm-plus): Digital media and content transformation.
+
+## Company Information
+
+- [About Us](/about-us): Learn about our mission and leadership.
+- [Careers](/careers): Join our team of innovators.
+- [Contact Us](/contact-us): Reach out for partnership and service inquiries.

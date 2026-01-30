@@ -7,18 +7,25 @@ const SEO = ({
   keywords = 'digital transformation, cloud services, cybersecurity, AI consulting, data analytics, managed services, enterprise solutions',
   canonical = '',
   ogImage = 'https://images.unsplash.com/photo-1644325349124-d1756b79dd42?w=1200',
-  ogType = 'website'
+  ogType = 'website',
+  schema = null // Additional schema for specific pages
 }) => {
   const siteUrl = window.location.origin;
   const currentUrl = canonical || window.location.href;
 
-  const structuredData = {
+  const organizationSchema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'VDart Digital',
     description: description,
     url: siteUrl,
     logo: `${siteUrl}/logo.png`,
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Alpharetta',
+      addressRegion: 'GA',
+      addressCountry: 'USA'
+    },
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'Customer Service',
@@ -54,10 +61,15 @@ const SEO = ({
       
       {/* Structured Data */}
       <script type="application/ld+json">
-        {JSON.stringify(structuredData)}
+        {JSON.stringify(organizationSchema)}
       </script>
+      {schema && (
+        <script type="application/ld+json">
+          {JSON.stringify(schema)}
+        </script>
+      )}
       
-      {/* Additional SEO tags */}
+      {/* Additional SEO/GEO tags */}
       <meta name="robots" content="index, follow" />
       <meta name="googlebot" content="index, follow" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
